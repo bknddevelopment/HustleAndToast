@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --luxe-black: 0 0% 0%;
+    --luxe-white: 0 0% 98%;
+    --luxe-gold: 43 68% 52%;
+  }
+  
+  body {
+    @apply bg-luxe-white text-luxe-charcoal font-sans antialiased;
+  }
+
+  ::selection {
+    @apply bg-luxe-gold text-luxe-white;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-luxe-cream;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-luxe-gray-300 hover:bg-luxe-gray-400;
+    border-radius: 5px;
+  }
+
+  /* Smooth scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .luxe-container {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+
+  .luxe-heading-1 {
+    @apply text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight;
+  }
+
+  .luxe-heading-2 {
+    @apply text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight;
+  }
+
+  .luxe-heading-3 {
+    @apply text-2xl sm:text-3xl lg:text-4xl font-light tracking-tight;
+  }
+
+  .luxe-button {
+    @apply inline-flex items-center justify-center px-8 py-4 text-sm font-medium tracking-wider uppercase transition-all duration-300 border border-luxe-charcoal hover:bg-luxe-charcoal hover:text-luxe-white focus:outline-none focus:ring-2 focus:ring-luxe-gold focus:ring-offset-2 focus:ring-offset-luxe-white disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .luxe-button-gold {
+    @apply luxe-button bg-luxe-gold text-luxe-white border-luxe-gold hover:bg-luxe-gold-dark hover:border-luxe-gold-dark;
+  }
+
+  .luxe-input {
+    @apply w-full px-4 py-3 bg-white border border-luxe-border text-luxe-charcoal placeholder-luxe-slate focus:border-luxe-gold focus:outline-none focus:ring-1 focus:ring-luxe-gold transition-colors duration-200;
+  }
+
+  .luxe-card {
+    @apply bg-white border border-luxe-border shadow-md hover:shadow-lg transition-all duration-300;
+  }
+
+  .luxe-badge {
+    @apply inline-flex items-center px-3 py-1 text-xs font-medium tracking-wider uppercase bg-luxe-gold text-white;
+  }
+
+  /* Loading shimmer effect */
+  .luxe-shimmer {
+    @apply relative overflow-hidden bg-luxe-gray-100;
+  }
+
+  .luxe-shimmer::after {
+    @apply absolute inset-0 -translate-x-full animate-shimmer bg-gradient-to-r from-transparent via-luxe-gray-200 to-transparent;
+    content: "";
+  }
+
+  /* Fade animations */
+  .fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  .fade-up {
+    animation: fadeUp 0.5s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .luxe-gradient {
+    @apply bg-gradient-to-br from-luxe-gold via-yellow-500 to-luxe-gold;
+  }
+
+  .luxe-text-gradient {
+    @apply bg-clip-text text-transparent luxe-gradient;
+  }
+}
