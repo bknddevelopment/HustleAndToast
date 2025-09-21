@@ -82,6 +82,17 @@ export function Footer() {
         </div>
       </div>
 
+      {/* Mission Statement Section */}
+      <div className="bg-gradient-to-r from-luxe-gold/5 via-luxe-gold/10 to-luxe-gold/5 py-12 border-b border-luxe-border">
+        <div className="luxe-container text-center">
+          <p className="text-lg text-luxe-charcoal font-light italic leading-relaxed max-w-4xl mx-auto">
+            "At Hustle and Toast, our mission is to inspire relentless ambition while fostering gratitude.
+            We empower individuals to chase their goals, celebrate their milestones, and honor the people
+            and moments that make the journey meaningful."
+          </p>
+        </div>
+      </div>
+
       {/* Main Footer Content */}
       <div className="luxe-container py-16">
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">

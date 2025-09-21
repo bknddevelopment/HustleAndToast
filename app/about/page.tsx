@@ -75,6 +75,23 @@ export default function AboutPage() {
       {/* Mission Statement */}
       <section className="py-20">
         <div className="luxe-container">
+          {/* Mission Statement Card */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto mb-16 text-center"
+          >
+            <div className="bg-gradient-to-br from-luxe-cream to-white p-10 border border-luxe-gold/20 shadow-xl">
+              <h2 className="luxe-heading-2 text-luxe-gold mb-6">Our Mission</h2>
+              <p className="text-xl text-luxe-charcoal leading-relaxed font-light italic">
+                "At Hustle and Toast, our mission is to inspire relentless ambition while fostering gratitude.
+                We empower individuals to chase their goals, celebrate their milestones, and honor the people
+                and moments that make the journey meaningful."
+              </p>
+            </div>
+          </motion.div>
+
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -83,22 +100,22 @@ export default function AboutPage() {
             >
               <h2 className="luxe-heading-2 mb-6">Welcome to Hustle and Toast</h2>
               <p className="text-lg text-luxe-slate mb-6 leading-relaxed">
-                Welcome to Hustle and Toast - a vibrant lifestyle brand rooted in celebrating 
-                achievements and expressing gratitude. We embody the spirit of relentless hustle 
+                Welcome to Hustle and Toast - a vibrant lifestyle brand rooted in celebrating
+                achievements and expressing gratitude. We embody the spirit of relentless hustle
                 while honoring the beauty of acknowledging success through toasting.
               </p>
               <p className="text-lg text-luxe-slate mb-6 leading-relaxed">
-                Our brand is a beacon of inspiration, encouraging you to pursue your goals, 
+                Our brand is a beacon of inspiration, encouraging you to pursue your goals,
                 overcome challenges, and celebrate every win along the way.
               </p>
               <p className="text-lg text-luxe-slate mb-6 leading-relaxed">
-                At Hustle and Toast, we know success is more meaningful when paired with gratitude. 
-                Every toast is more than a gesture—it's a heartfelt expression of appreciation for 
+                At Hustle and Toast, we know success is more meaningful when paired with gratitude.
+                Every toast is more than a gesture—it's a heartfelt expression of appreciation for
                 the people, moments, and experiences that enrich our lives.
               </p>
               <p className="text-lg text-luxe-slate mb-8 leading-relaxed">
-                Join us on this journey of empowerment, celebration, and unity. Whether you're 
-                raising a glass to your own achievements or finding motivation in our community, 
+                Join us on this journey of empowerment, celebration, and unity. Whether you're
+                raising a glass to your own achievements or finding motivation in our community,
                 you'll always have a reason to hustle harder and toast louder.
               </p>
               <Link href="/products" className="luxe-button-gold inline-flex items-center gap-2">

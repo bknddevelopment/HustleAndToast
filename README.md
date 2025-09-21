@@ -2,6 +2,10 @@
 
 A modern Next.js application celebrating the luxury lifestyle, success, and ambition.
 
+## Our Mission
+
+At Hustle and Toast, our mission is to inspire relentless ambition while fostering gratitude. We empower individuals to chase their goals, celebrate their milestones, and honor the people and moments that make the journey meaningful.
+
 ## Overview
 
 HustleAndToast is a premium web experience that showcases the intersection of hard work and luxurious living. Built with Next.js and TypeScript, this application delivers a sophisticated user interface with smooth animations and responsive design.

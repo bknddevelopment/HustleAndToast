@@ -80,9 +80,19 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-xl text-luxe-charcoal/90 mb-8 max-w-2xl mx-auto drop-shadow-md"
+            className="text-xl text-luxe-charcoal/90 mb-4 max-w-2xl mx-auto drop-shadow-md"
           >
             Where ambition meets achievement. Discover our curated collection of premium lifestyle products for those who hustle hard and toast to success
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="text-lg text-luxe-charcoal/80 mb-8 max-w-3xl mx-auto drop-shadow-md font-light italic"
+          >
+            "At Hustle and Toast, our mission is to inspire relentless ambition while fostering gratitude.
+            We empower individuals to chase their goals, celebrate their milestones, and honor the people
+            and moments that make the journey meaningful."
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
